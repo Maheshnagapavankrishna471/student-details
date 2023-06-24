@@ -13,12 +13,22 @@ const studentSlice = createSlice({
     reducers:{
         addstudent:(state,action)=>{
             state.value.push(action.payload)
+        },updatestudent:(state,action)=>{
+            state.value.map((studentss)=>{
+                if(studentss.id==action.payload.id){
+                    studentss.firstname = action.payload.firstname
+                    studentss.lastname = action.payload.lastname
+                    studentss.email = action.payload.email
+                    studentss.phno = action.payload.phno
+                    studentss.batchno = action.payload.batchno
+                    studentss.course = action.payload.course
+                }
+            })
+        },
+        deleteStudent:(state,action)=>{
+            state.value = state.value.filter((studentsss)=>studentsss.id!==action.payload.id)
         }
-
     }
-
 })
-
 export default studentSlice.reducer
-
-export const {addstudent} = studentSlice.actions
+export const {addstudent,updatestudent,deleteStudent} = studentSlice.actions

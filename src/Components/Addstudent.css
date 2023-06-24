@@ -1,0 +1,27 @@
+body{
+   background-image: url("https://png.pngtree.com/background/20230401/original/pngtree-school-classroom-classroom-background-picture-image_2253409.jpg");
+   /* background-image: url("https://png.pngtree.com/background/20230401/original/pngtree-education-classroom-cute-cartoon-orange-background-picture-image_2234909.jpg"); */
+   min-width:100%;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 75vh;
+    align-items: center;
+    margin: auto;
+}
+.tagg{
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: large;
+    border-radius: 7px;
+    border: 3px solid rgb(109, 191, 218);
+}
+#btn{
+    margin-top: 30px;
+}
+
